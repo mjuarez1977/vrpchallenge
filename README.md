@@ -1,4 +1,4 @@
-# VRP Challenge solution in Java 
+# Vehicle Routing Problem solution in Java 
 
 * This code attempts to solve the Vehicle Routing Problem with multiple drivers using:
   * Nearest neighbor as the basic heuristic.
@@ -10,19 +10,26 @@
 * Since the requirements indicated a 30-second hard limit on execution time, the program keeps iterating for 25 seconds, at which point it stops and prints out the best/lowest-cost solution it found.
 
 # How to build and run
-* There is a pre-packaged jar included under the `/bin` directory in this repo.
-* In order to build the jar yourself and run it, you can use Maven to package it into a jar with `mvn package`, and it should create a file called `challenge-1.0-SNAPSHOT-jar-with-dependencies.jar` under `target/`.
+* There is a pre-built jar included under the `/bin` directory in this repo.
+* In order to build the jar yourself, you can use Maven to package it into a jar by running `mvn package` in the root directory of the project, and it should create a file called `challenge-1.0-SNAPSHOT-jar-with-dependencies.jar` under `target/`.
 * Once you have the jar, you can run the program by executing the following command:
   * `java -jar challenge-1.0-SNAPSHOT-jar-with-dependencies.jar path/to/problemfile.txt`  
+* Sample output for the `problem1.txt` file follows:
+  * ```
+    [9,10]
+    [6,7]
+    [1,4,5,8]
+    [3,2]
+    ```
 
-
-# Validation using evaluateShared.py script
-* This code was validated with the provided `evaluateShared.py` script, and to iterate when adding optimizations.
-* The best/lowest-cost result after applying all the optimizations, and running for 25 seconds, is copied below:
-```
-mean cost: 51750.56198202616
-mean run time: 25078.42116355896ms
-```
+# Validation using `evaluateShared.py` script
+* This code was validated with the provided `evaluateShared.py` script, and it didn't report any errors.
+* It also proved very useful when comparing different types of optimizations.
+* The best/lowest-cost result after applying all the optimizations is copied below:
+  * ```
+     mean cost: 51750.56198202616
+     mean run time: 25078.42116355896ms
+    ```
  
 # References used:
   * https://en.wikipedia.org/wiki/Vehicle_routing_problem
