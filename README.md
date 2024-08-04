@@ -11,7 +11,7 @@
 
 # How to build and run
 * There is a pre-built jar included under the `/bin` directory in this repo.
-* In order to build the jar yourself, you can use Maven to package it into a jar by running `mvn package` in the root directory of the project, and it should create a file called `challenge-1.0-SNAPSHOT-jar-with-dependencies.jar` under `target/`.
+* In order to build the jar yourself, you can use Maven to package it by running `mvn package` in the root directory of the project, and it should create a file called `challenge-1.0-SNAPSHOT-jar-with-dependencies.jar` under `target/`.
 * Once you have the jar, you can run the program by executing the following command:
   * `java -jar challenge-1.0-SNAPSHOT-jar-with-dependencies.jar path/to/problemfile.txt`  
 * Sample output for the `problem1.txt` file follows:
